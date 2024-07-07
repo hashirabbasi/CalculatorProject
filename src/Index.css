@@ -1,0 +1,109 @@
+body {
+  background-image: url(https://media.istockphoto.com/id/1419844586/vector/stem-blue-horizontal-frame-vector-education-bright-illustration.jpg?s=612x612&w=0&k=20&c=-A1eYLYulujNsiM26lkVy7qMT_Hp82N5EtKHSFRmigk=);
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center; 
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  max-width: 400px;
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 11px;
+  border-color: #fffafa;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #5f5959;
+}
+
+.calculator-display {
+  background: #222;
+  color: #5c5ef3;
+  font-size: 2rem;
+  text-align: right;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
+}
+
+button {
+  background: #7784a0;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+button:active {
+  background: #7d68c5;
+}
+
+.key-operator {
+  background: #4b53be;
+  color: rgb(0, 0, 0);
+}
+
+.key-equals {
+  grid-column: span 2;
+  background: #1626b6;
+  color: rgb(255, 253, 253);
+}
+
+.key-zero {
+  grid-column: span 2;
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .calculator-display {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .calculator-keys {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 100%;
+    margin: 1rem;
+  }
+
+  .calculator-display {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .calculator-keys {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}

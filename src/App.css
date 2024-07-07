@@ -1,0 +1,25 @@
+
+
+body {
+    background-image: url(https://images.alphacoders.com/205/205913.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    height: 100vh; 
+    display:flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, sans-serif;
+  }
+  
+  .app-container {
+    text-align: center;
+  }
+  
+  .selected-item {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #d5d8db;
+  }
+  
